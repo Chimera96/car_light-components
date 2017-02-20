@@ -1,11 +1,11 @@
-"%JAVA%\bin\javac" -Xlint:all -g:none -classpath build -d build src\IComponent.java
-"%JAVA%\bin\javac" -Xlint:all -g:none -classpath build -d build src\Component.java
+"%JAVA%\bin\javac" -Xlint:all -g:none -classpath build -d build src\ILight.java
+"%JAVA%\bin\javac" -Xlint:all -g:none -classpath build -d build src\EconomyLight.java
 
 cd build
-"%JAVA%\bin\jar" -cvf Component.jar IComponent.class
-"%JAVA%\bin\jar" -uvf Component.jar Component.class
-"%JAVA%\bin\jar" -uvf Component.jar Component$Port.class
+"%JAVA%\bin\jar" -cvf EconomyLight.jar ILight.class
+"%JAVA%\bin\jar" -uvf EconomyLight.jar EconomyLight.class
+"%JAVA%\bin\jar" -uvf EconomyLight.jar EconomyLight$Port.class
 
-move Component.jar ..\Component.jar
+move EconomyLight.jar ..\EconomyLight.jar
 
 pause
